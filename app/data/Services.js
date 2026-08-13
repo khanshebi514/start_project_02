@@ -1,91 +1,127 @@
 const services = [
   {
     number: "01",
-    title: "Electrical Engineering",
+    title: "Electrical Distribution Design",
     description:
-      "Power distribution, reticulation, and electrical system design compliant with Australian standards.",
+      "PigeonsPower offers a wide range of design services including",
     category: "Electrical",
     icon: "⚡",
 
     includes: [
-      "Power distribution design",
-      "Electrical reticulation",
-      "Network coordination",
-      "Electrical system design",
-      "Australian standards compliance",
+      "Distribution design & drafting",
+      "LV reticulation of underground networks",
+      "Underground Distribution design and drafting",
+      "URD Estate Designs ",
+      "AS 3000 Lighting",
+      "AS 3000 Lighting",
+      "Public lighting design",
     ],
   },
 
   {
     number: "02",
-    title: "National Broadband Network (NBN)",
+    title: "Public Lighting Design ",
     description:
-      "NBN design, coordination and delivery for new developments and infrastructure upgrades.",
+      "PigeonsPower offers a wide range of Public Lighting Design services including",
     category: "Infrastructure",
     icon: "⌁",
 
     includes: [
-      "NBN network design",
-      "Pit and conduit planning",
-      "Infrastructure coordination",
-      "New development connectivity",
-      "Network upgrade support",
+      "Lux Assessment as per AS1158 standards",
+      "AS 3000 Lighting Designs ",
     ],
   },
 
   {
     number: "03",
-    title: "Project Management",
+    title: "Temporary Public Lighting Design",
     description:
-      "End-to-end coordination that keeps engineering projects on schedule, on scope and on budget.",
-    category: "Management",
-    icon: "◫",
+      "PigeonsPower offers a wide range of Temporary Public Lighting Design services including",
+    category: "Infrastructure",
+    icon: "⌁",
 
     includes: [
-      "Project planning",
-      "Engineering coordination",
-      "Program management",
-      "Stakeholder coordination",
-      "Scope and budget control",
+      "Solar Lighting Design ",
+      "Lux Assessment ",
+      "JUP/JUMA temporary lanterns Design",
     ],
   },
 
   {
     number: "04",
-    title: "Engineering Consultancy",
+    title: "Project Management",
     description:
-      "Independent technical advice and design review across electrical and mechanical disciplines.",
-    category: "Consultancy",
-    icon: "◆",
+      "PigeonsPower offers a wide range of Project Management services including: ",
+    category: "Management",
+    icon: "◫",
 
     includes: [
-      "Technical design review",
-      "Engineering advice",
-      "Design coordination",
-      "Technical documentation review",
-      "Electrical and mechanical consultancy",
+      "Management of tender process",
+      "Pit and Pipe design review and Project Management",
+      "Electrical Design review and Project Management",
+      "NBN Design review and Project Management",
+      "Project scoping and scheduling",
+      "Cost management",
+      "Document preparation",
+      "Contractor selection",
+      "Management of installation works",
+      "Design management",
+      "Risk analysis",
     ],
   },
 
   {
     number: "05",
-    title: "Cost Estimation",
+    title: " Electrical Detailing & Drafting",
     description:
-      "Accurate, detailed cost estimates that keep your project on budget from concept to completion.",
-    category: "Commercial",
-    icon: "$",
+      "PigeonsPower offers a wide range of Detailing & Drafting services including",
+    category: "Consultancy",
+    icon: "◆",
 
     includes: [
-      "Detailed cost estimation",
-      "Material pricing",
-      "Labour cost assessment",
-      "Tender pricing support",
-      "Budget forecasting",
+      "Detailing Underground assets (Conduits & Cables) ",
+      "Drafting as per utilities standards",
+      "As-Builts preparation ",
     ],
   },
 
   {
     number: "06",
+    title: "Telecommunication Design (NBN, Telstra, Optus)",
+    description:
+      "PigeonsPower offers a wide range of Telecommunication design services including",
+    category: "Infrastructure",
+    icon: "^",
+
+    includes: [
+      "Pit and Pipe design for National Broadband Network (NBN)",
+      "Pit and Pipe design for Telstra",
+      "Pit and Pipe design for Optus",
+      "Project Management on Telecommunication designs.",
+    ],
+  },
+
+  {
+    number: "09",
+    title: "Engineering Consultancy",
+    description:
+      "Professional engineering consultancy services providing technical advice, design review, project support, and practical engineering solutions to ensure projects are safe, compliant, cost-effective, and delivered to the required standards.",
+    category: "Engineering",
+    icon: "⚙",
+
+    includes: [
+      "Engineering design consultancy",
+      "Project planning and technical support",
+      "Infrastructure and utility consultancy",
+      "Electrical engineering consultancy",
+      "Telecommunication engineering consultancy",
+      "Pit and Pipe design consultancy",
+      "NBN, Telstra and Optus design consultancy",
+    ],
+  },
+
+  {
+    number: "08",
     title: "Quantity Takeoff",
     description:
       "Precise measurement and material quantification for tendering, procurement and construction.",
@@ -100,21 +136,22 @@ const services = [
       "Procurement quantities",
     ],
   },
-
   {
-    number: "07",
-    title: "LUC Assessment Services",
+    number: "10",
+    title: "Cost Estimation",
     description:
-      "Land Use Compatibility assessments that support planning approvals and infrastructure compliance.",
-    category: "Assessment",
-    icon: "⌖",
+      "PigeonsPower offers a wide range of Telecommunication design services including",
+    category: "Cost Management",
+    icon: "💰",
 
     includes: [
-      "Land use assessment",
-      "Planning support",
-      "Infrastructure compatibility",
-      "Compliance assessment",
-      "Approval documentation support",
+      "Preliminary cost estimation",
+      "Detailed project cost estimation",
+      "Quantity take-offs",
+      "Material and labour cost assessment",
+      "Project budget preparation",
+      "Cost planning and forecasting",
+      "Tender cost estimation",
     ],
   },
 ];
