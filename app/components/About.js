@@ -162,7 +162,8 @@ export default function AboutPage() {
           {/* RIGHT CARD */}
           <div
             className="
-              relative
+            hidden
+              md:flex relative
               overflow-hidden
               rounded-brand-lg
               bg-brand-primary

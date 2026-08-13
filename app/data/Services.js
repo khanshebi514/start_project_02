@@ -13,7 +13,6 @@ const services = [
       "Underground Distribution design and drafting",
       "URD Estate Designs ",
       "AS 3000 Lighting",
-      "AS 3000 Lighting",
       "Public lighting design",
     ],
   },
