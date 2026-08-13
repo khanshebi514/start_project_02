@@ -172,7 +172,7 @@ export default function ServiceCard({ service }) {
 
         {/* Description */}
 
-        <p
+        {/* <p
           className="
             mt-3
             line-clamp-2
@@ -184,7 +184,7 @@ export default function ServiceCard({ service }) {
           "
         >
           {service.description}
-        </p>
+        </p> */}
 
         {/* =================================================
             TOGGLE
@@ -429,7 +429,7 @@ export default function ServiceCard({ service }) {
             {/* CTA */}
 
             <a
-              href="contactus"
+              href="#contactus"
               className="
                 mt-5
 
