@@ -111,6 +111,14 @@ const services = [
 
     includes: [
       "Engineering design consultancy",
+      "All Utilities Applications",
+      "PMPL Applications",
+      "Powercor Applications",
+      "AusNet Applications",
+      "United Energy (UE) Applications",
+      "Jemena Applications",
+      "Telecommunication Applications",
+      "Utility connection applications",
       "Project planning and technical support",
       "Infrastructure and utility consultancy",
       "Electrical engineering consultancy",

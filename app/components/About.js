@@ -209,7 +209,7 @@ export default function AboutPage() {
                   text-brand-surface
                 "
               >
-                Construction & Electrical Expertise
+                Electrical Consultancy and Design
               </h3>
 
               <p
@@ -219,8 +219,8 @@ export default function AboutPage() {
                   text-brand-surface/70
                 "
               >
-                One reliable partner for construction, electrical installation,
-                maintenance, and project support.
+                One reliable partner for Electrical consultancy, Design ,
+                electrical installation, maintenance, and project support.
               </p>
 
               <div
@@ -241,12 +241,10 @@ export default function AboutPage() {
                   "
                 >
                   <p className="text-3xl font-extrabold text-brand-accent">
-                    10+
+                    Trusted
                   </p>
 
-                  <p className="mt-1 text-sm text-brand-surface/60">
-                    Years Experience
-                  </p>
+                  <p className="mt-1 text-sm text-brand-surface/60"></p>
                 </div>
 
                 <div
@@ -259,12 +257,10 @@ export default function AboutPage() {
                   "
                 >
                   <p className="text-3xl font-extrabold text-brand-accent">
-                    250+
+                    Experinced
                   </p>
 
-                  <p className="mt-1 text-sm text-brand-surface/60">
-                    Projects Completed
-                  </p>
+                  <p className="mt-1 text-sm text-brand-surface/60"></p>
                 </div>
               </div>
             </div>
