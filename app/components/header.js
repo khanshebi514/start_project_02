@@ -1,7 +1,9 @@
 "use client";
+import logoImage from "@/public/pigeons.jpeg";
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,23 +11,23 @@ export default function Header() {
   const navItems = [
     {
       name: "Home",
-      href: "/",
+      href: "#",
     },
     {
       name: "About",
-      href: "/about",
+      href: "#about",
     },
     {
       name: "Services",
-      href: "/services",
+      href: "#services",
     },
     {
       name: "Projects",
-      href: "/projects",
+      href: "#projects",
     },
     {
       name: "Contact Us",
-      href: "/contact",
+      href: "#contactus",
     },
   ];
 
@@ -43,7 +45,7 @@ export default function Header() {
               LOGO
           ========================== */}
           <Link
-            href="/"
+            href="./"
             className="
               group flex items-center gap-3
               animate-fade-in
@@ -61,7 +63,9 @@ export default function Header() {
                 group-hover:scale-105
               "
             >
-              <span className="text-xl font-black text-brand-surface">⚡</span>
+              <span className="text-xl font-black text-brand-surface">
+                <Image src={logoImage} />
+              </span>
             </div>
 
             {/* Logo Text */}
@@ -87,7 +91,7 @@ export default function Header() {
                   text-brand-muted
                 "
               >
-                Electrical & Construction
+                Electrical Engineering Consultancy
               </p>
             </div>
           </Link>
@@ -133,7 +137,7 @@ export default function Header() {
           ========================== */}
           <div className="hidden lg:block">
             <Link
-              href="/contact"
+              href="#contactus"
               className="
                 inline-flex
                 items-center

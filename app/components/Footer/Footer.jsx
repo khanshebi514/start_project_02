@@ -5,10 +5,10 @@ const navigation = [
     title: "Company",
     links: [
       { label: "Home", href: "/" },
-      { label: "About Us", href: "/about" },
-      { label: "Services", href: "/services" },
-      { label: "Projects", href: "/projects" },
-      { label: "Contact Us", href: "/contact" },
+      { label: "About Us", href: "#about" },
+      { label: "Services", href: "#services" },
+      { label: "Projects", href: "#projects" },
+      { label: "Contact Us", href: "#contactus" },
     ],
   },
   {
@@ -293,7 +293,7 @@ export default function Footer() {
                 text-brand-accent
               "
             >
-              Start a Project
+              Address and Contacts
             </h3>
 
             <p
@@ -304,14 +304,35 @@ export default function Footer() {
                 text-brand-surface/65
               "
             >
-              Have an upcoming project or need engineering support? Tell us what
-              you are working on.
+              1-Chindwin Place, Roxburgh Park-3064
+            </p>
+
+            <p
+              className="
+                mt-2
+                text-sm
+                leading-7
+                text-brand-surface/65
+              "
+            >
+              +61 419 663 260
+            </p>
+
+            <p
+              className="
+                mt-2
+                text-sm
+                leading-7
+                text-brand-surface/65
+              "
+            >
+              info@pigeonspower.com
             </p>
 
             {/* CTA */}
 
             <Link
-              href="/contact"
+              href="#contactus"
               className="
                 mt-6
                 inline-flex
@@ -394,8 +415,8 @@ export default function Footer() {
             text-brand-surface/45
           "
         >
-          © {new Date().getFullYear()} Engineering Solutions. All rights
-          reserved.
+          © {new Date().getFullYear()} Pigeonspower.com.au Engineering
+          Solutions. All rights reserved.
         </p>
 
         {/* Bottom Links */}

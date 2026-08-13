@@ -1,3 +1,6 @@
+import towerImage from "@/public/electrical tower.jpg";
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-primary ">
@@ -12,7 +15,7 @@ export default function Hero() {
           {/* Left Content */}
           <div className="max-w-2xl">
             <span className="mb-5 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur-sm">
-              Electrical & Construction Experts
+              Electrical Engineering Consultancy
             </span>
 
             <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
@@ -67,8 +70,8 @@ export default function Hero() {
             <div className="relative mx-auto h-[520px] max-w-[500px]">
               {/* Main image */}
               <div className="absolute right-0 top-0 h-[420px] w-[360px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-                <img
-                  src="/images/construction.jpg"
+                <Image
+                  src={towerImage}
                   alt="Construction project"
                   className="h-full w-full object-cover"
                 />

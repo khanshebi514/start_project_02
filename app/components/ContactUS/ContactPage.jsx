@@ -4,7 +4,7 @@ import ContactInfo from "./ContactInformation";
 
 export default function ContactPage() {
   return (
-    <main className="bg-brand-background">
+    <main className="bg-brand-background" id="contactus">
       {/* Hero */}
 
       <ContactHero />

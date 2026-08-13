@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <main className="bg-brand-background text-brand-text" id="aboutPage">
+    <main className="bg-brand-background text-brand-text" id="about">
       {/* =====================================================
           HERO / PAGE INTRO
       ===================================================== */}
@@ -127,7 +127,7 @@ export default function AboutPage() {
 
             <div className="mt-8">
               <Link
-                href="/contact"
+                href="#contact"
                 className="
                   inline-flex
                   items-center
