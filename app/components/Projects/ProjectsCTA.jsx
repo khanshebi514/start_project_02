@@ -66,7 +66,7 @@ export default function ProjectsCTA() {
 
         <div className="mt-8 lg:mt-0">
           <Link
-            href="/contact"
+            href="#contactus"
             className="
               inline-flex
               items-center

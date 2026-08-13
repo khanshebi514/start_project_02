@@ -127,7 +127,7 @@ export default function AboutPage() {
 
             <div className="mt-8">
               <Link
-                href="#contact"
+                href="#contactus"
                 className="
                   inline-flex
                   items-center
@@ -658,7 +658,7 @@ export default function AboutPage() {
 
           <div className="mt-8">
             <Link
-              href="/contact"
+              href="contactus"
               className="
                 inline-flex
                 items-center
