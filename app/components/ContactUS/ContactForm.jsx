@@ -13,7 +13,8 @@ const initialForm = {
 };
 
 const services = [
-  "Electrical Engineering",
+  "Electrical Distribution Design",
+  "Public Lighting Design",
   "National Broadband Network (NBN)",
   "Project Management",
   "Engineering Consultancy",
