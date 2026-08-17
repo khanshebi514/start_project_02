@@ -47,7 +47,7 @@ export default function Hero() {
             </div>
 
             {/* Small stats */}
-            <div className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/20 pt-8">
+            {/* <div className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/20 pt-8">
               <div>
                 <h3 className="text-2xl font-bold">10+</h3>
                 <p className="mt-1 text-sm text-white/60">Years Experience</p>
@@ -62,7 +62,7 @@ export default function Hero() {
                 <h3 className="text-2xl font-bold">100%</h3>
                 <p className="mt-1 text-sm text-white/60">Commitment</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Visual */}
