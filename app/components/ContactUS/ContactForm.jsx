@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { submitContactForm } from "@/lib/api/contact";
 
 const initialForm = {
   name: "",
@@ -25,6 +26,10 @@ const services = [
 export default function ContactForm() {
   const [formData, setFormData] = useState(initialForm);
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleChange = (event) => {
     const { name, value } = event.target;
 
@@ -34,12 +39,31 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    console.log("Contact form:", formData);
+    setIsSubmitting(true);
+    setSuccessMessage("");
+    setErrorMessage("");
 
-    // API integration can be added here later.
+    try {
+      const data = await submitContactForm(formData);
+
+      setSuccessMessage(
+        data.message || "Your enquiry has been submitted successfully.",
+      );
+
+      // Clear form after successful submission
+      setFormData(initialForm);
+    } catch (error) {
+      console.error("Contact form submission error:", error);
+
+      setErrorMessage(
+        error.message || "Something went wrong. Please try again.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -130,17 +154,12 @@ export default function ContactForm() {
               bg-brand-background
               px-4
               py-3
-
               text-sm
               text-brand-text
-
               outline-none
-
               transition-all
               duration-300
-
               placeholder:text-brand-muted
-
               focus:border-brand-secondary
               focus:ring-2
               focus:ring-brand-secondary/10
@@ -179,17 +198,12 @@ export default function ContactForm() {
               bg-brand-background
               px-4
               py-3
-
               text-sm
               text-brand-text
-
               outline-none
-
               transition-all
               duration-300
-
               placeholder:text-brand-muted
-
               focus:border-brand-secondary
               focus:ring-2
               focus:ring-brand-secondary/10
@@ -227,17 +241,12 @@ export default function ContactForm() {
               bg-brand-background
               px-4
               py-3
-
               text-sm
               text-brand-text
-
               outline-none
-
               transition-all
               duration-300
-
               placeholder:text-brand-muted
-
               focus:border-brand-secondary
               focus:ring-2
               focus:ring-brand-secondary/10
@@ -275,17 +284,12 @@ export default function ContactForm() {
               bg-brand-background
               px-4
               py-3
-
               text-sm
               text-brand-text
-
               outline-none
-
               transition-all
               duration-300
-
               placeholder:text-brand-muted
-
               focus:border-brand-secondary
               focus:ring-2
               focus:ring-brand-secondary/10
@@ -322,15 +326,11 @@ export default function ContactForm() {
               bg-brand-background
               px-4
               py-3
-
               text-sm
               text-brand-text
-
               outline-none
-
               transition-all
               duration-300
-
               focus:border-brand-secondary
               focus:ring-2
               focus:ring-brand-secondary/10
@@ -378,18 +378,13 @@ export default function ContactForm() {
               bg-brand-background
               px-4
               py-3
-
               text-sm
               leading-7
               text-brand-text
-
               outline-none
-
               transition-all
               duration-300
-
               placeholder:text-brand-muted
-
               focus:border-brand-secondary
               focus:ring-2
               focus:ring-brand-secondary/10
@@ -397,6 +392,46 @@ export default function ContactForm() {
           />
         </div>
       </div>
+
+      {/* Success Message */}
+
+      {successMessage && (
+        <div
+          className="
+            mt-6
+            rounded-brand
+            border
+            border-brand-border
+            bg-brand-background
+            p-4
+            text-sm
+            leading-6
+            text-brand-secondary
+          "
+        >
+          {successMessage}
+        </div>
+      )}
+
+      {/* Error Message */}
+
+      {errorMessage && (
+        <div
+          className="
+            mt-6
+            rounded-brand
+            border
+            border-brand-border
+            bg-brand-background
+            p-4
+            text-sm
+            leading-6
+            text-brand-primary
+          "
+        >
+          {errorMessage}
+        </div>
+      )}
 
       {/* Submit */}
 
@@ -425,37 +460,35 @@ export default function ContactForm() {
 
         <button
           type="submit"
+          disabled={isSubmitting}
           className="
             inline-flex
             shrink-0
             items-center
             justify-center
             gap-2
-
             rounded-brand
-
             bg-brand-secondary
-
             px-7
             py-3.5
-
             text-sm
             font-bold
-
             text-brand-surface
-
             shadow-brand-button
-
             transition-all
             duration-300
-
             hover:-translate-y-0.5
             hover:bg-brand-primary
             hover:shadow-brand
+            disabled:cursor-not-allowed
+            disabled:opacity-60
+            disabled:hover:translate-y-0
+            disabled:hover:shadow-brand-button
           "
         >
-          Send Enquiry
-          <span>→</span>
+          {isSubmitting ? "Sending..." : "Send Enquiry"}
+
+          {!isSubmitting && <span>→</span>}
         </button>
       </div>
     </form>
